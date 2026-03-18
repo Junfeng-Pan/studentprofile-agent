@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Configuration (Secrets)
+config/settings.yaml
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+output/
+tests/resourcesForTests/*.txt

@@ -18,3 +18,4 @@ config/settings.yaml
 # Project specific
 output/
 tests/resourcesForTests/*.txt
+resources/

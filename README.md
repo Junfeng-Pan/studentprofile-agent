@@ -35,11 +35,17 @@ llm:
   model_name: "qwen-plus"
 ```
 
-### 3. 运行解析
-使用 `main.py` 处理单份简历：
+### 3. 运行 Web 服务
+使用 FastAPI 启动后端接口：
 ```bash
-python main.py path/to/your/resume.pdf
+python webService/main.py
 ```
+默认运行在 `http://127.0.0.1:8000`。您可以访问 `http://127.0.0.1:8000/docs` 查看 Swagger 文档并在线测试接口。
+
+#### API 接口说明：
+- **POST `/upload-resume/`**: 上传简历文件进行解析。
+  - 参数：`file` (PDF/Word)
+  - 返回：结构化分析结果。
 
 ### 4. 运行测试
 执行自动化测试以确保各模块正常运行：
